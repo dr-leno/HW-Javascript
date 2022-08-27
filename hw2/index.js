@@ -2,7 +2,7 @@
 
 let firstNumber = prompt('Enter first number',20);
 
-// пока условие true будет выполняться цикл, то есть пока - Отмена, пустая строка или буквенные кракозябры 
+// пока условие в скобках true будет выполняться цикл
 
 while (isInvalid(firstNumber)) {
     firstNumber = prompt('Enter NUMBER');
@@ -14,7 +14,7 @@ while (isInvalid(secondNumber)) {
     secondNumber = prompt('Enter NUMBER');
 }
 
-// Функция проверки введенного числа. Если пользователь нажал Отмена - null
+//проверка введенного числа. Если пользователь нажал Отмена - null
 
 function isInvalid(str) {
     return str === null || str.trim() === '' || isNaN(str);
@@ -26,17 +26,17 @@ const division = +firstNumber + ' / ' + +secondNumber + ' = ' + (+firstNumber / 
 const multiplication = +firstNumber + ' * ' + +secondNumber + ' = ' + (+firstNumber * +secondNumber);
 
 let operation = prompt('Type the operation: +, -, * or /');
-
-/*В условии циклв должно быть true, 
-а если я спрашиваю ввести строго равно операторы, а получаю кракозябры или отмену, то в скобках получу false 
-стоит привести к обратному boolean с помощью ! чтобы получить true в условии цикла*/
+    operation = operation.trim();
     
  while(validation(operation)) {
     operation = prompt('Valid operations: +, -, * or /');
 }
 
+/*проверка введенного оператора. Если ввела не + - / * получу false 
+а для цикла условие превращаю в true с помощью !*/
+
 function validation(result){
-    return !(result.trim() === '+' || result.trim() === '-' || result.trim() === '*' || result.trim() === '/');
+    return !(result === '+' || result === '-' || result === '*' || result === '/');
 }
 
 switch(operation){
@@ -45,7 +45,7 @@ switch(operation){
     case '-': 
         alert(subtraction); break;
     case '/': 
-        alert( division); break;
+        alert(division); break;
     case '*': 
         alert(multiplication); break;
     default: 
@@ -53,7 +53,3 @@ switch(operation){
 }
 
 alert('Finally it works! It was so difficult')
-
-
-
-
