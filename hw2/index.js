@@ -25,11 +25,10 @@ const subtraction = +firstNumber + ' - ' + +secondNumber + ' = ' +  (+firstNumbe
 const division = +firstNumber + ' / ' + +secondNumber + ' = ' + (+firstNumber / +secondNumber);
 const multiplication = +firstNumber + ' * ' + +secondNumber + ' = ' + (+firstNumber * +secondNumber);
 
-let operation = prompt('Type the operation: +, -, * or /');
-    operation = operation.trim();
+let operation = prompt('Type the operation: +, -, * or /').trim();  
     
  while(validation(operation)) {
-    operation = prompt('Valid operations: +, -, * or /');
+    operation = prompt('Valid operations: +, -, * or /').trim();
 }
 
 /*проверка введенного оператора. Если ввела не + - / * получу false 
