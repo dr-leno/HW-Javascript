@@ -10,8 +10,8 @@ function getOperand(label) {
 
     return Number(operand);
 }
-function isOperandInvalid(val) {
-    return val === null || val <= 0 || val.trim() === '' || isNaN(val);
+function isOperandInvalid(value) {
+    return value === null || value <= 0 || value.trim() === '' || isNaN(value);
 }
 
 let sumEven = 0;
@@ -20,9 +20,9 @@ let sumOdd = 0;
 // цикл, который будет выполняться начиная с 1 и увеличиваясь на 1 (посткремент) пока не будет равен введенному числу
 for (let i = 1; i <= number; i++) {
     if (i % 2 == 0) {
-        sumEven +=i;
+        sumEven += i;
     } else {
-        sumOdd +=i;
+        sumOdd += i;
  }
 }
 
