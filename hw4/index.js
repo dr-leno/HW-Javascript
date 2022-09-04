@@ -1,10 +1,17 @@
 'use strict'
+// выбрать мат. операцию через функцию
 const action = getAction();
+
+// выбрать количество чисел для подсчета через функцию
 const numbersCounter = getNumbersCount();
 
 let result;
 
+// переменная для выражения с операндами и математической операции
 let expression = '';
+
+// Цикл, который выполняется то количество раз сколько введено количество чисел 
+// и подсчитывает результат выбранной математической операции через switch в функции
 
 for (let i = 1; i <= numbersCounter; i++) {
     let number = getNumber(`Enter number ${i}`);
@@ -13,10 +20,9 @@ for (let i = 1; i <= numbersCounter; i++) {
     } else{
         calculateResult(action, number);
     }
-    
-    let newAction = i == numbersCounter ? '' : action;
-    expression = getExpression(number, newAction);
-    
+    // if else в укороченом виде через ? :
+    let newAction = (i == numbersCounter) ? '' : action;
+    expression = getExpression(number, newAction);  
 }
 
 showExpression(expression);
@@ -79,12 +85,10 @@ function calculateResult(action, currentNumber) {
 
 function getExpression(number, action) {
     expression += `${number} ${action} `;
-
     return expression;
 }
 
 function showExpression(expression) {
     const userMessage  = alert(`Your calculation: ${expression} = ${result}`);
-
     return userMessage;
 }
