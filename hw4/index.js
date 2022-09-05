@@ -49,7 +49,7 @@ function getNumbersCount(){
         count = prompt('How many numbers will you enter?'); 
     }
 
-    return count;
+    return Number(count);
 }
 
 function isCountInvalid(val){
