@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator with DOM</title>
+    <script src="./index.js" defer></script>
+</head>
+<body>
+        <div>
+            <label for="number1">Enter first number</label>
+            <input type="number" name="number1" id="number1">
+        </div>
+        
+        <select name="action" id="action">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <div>
+            <label for="number2">Enter second number</label>
+            <input type="number" name="number2" id="number2">
+        </div>
+        <button id="calculate">Calculate</button>
+    <div id="result"></div>
+</body>
+</html>
