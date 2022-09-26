@@ -30,4 +30,3 @@ function calculateResult(a, b, action) {
 }
 
 calculateBtn.addEventListener('click', onBtnCalculate);
-
