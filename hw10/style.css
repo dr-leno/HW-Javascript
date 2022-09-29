@@ -1,0 +1,46 @@
+*, html, body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style-type: none;
+	text-decoration: none;
+}
+body{
+    padding: 0 20px;
+    background-color: #dbdbdb;
+}
+input{
+    border: 1px solid #000;
+    border-radius: 6px;
+    padding: 3px 10px;
+    background-color: lightgray;
+    margin-right: 10px;
+    color: #000;
+}
+h1{
+    margin: 10px 0;
+}
+tr{
+    margin-bottom: 10px;
+}
+th{
+    text-align: left;
+}
+td{
+    padding: 10px 0;
+    vertical-align: bottom;
+}
+button{
+    background-color: lightgray;
+    border: 1px solid #000;
+    border-radius: 6px;
+    padding: 3px 10px;
+    color: #000;
+    cursor: pointer;
+}
+button:disabled{
+    background-color: lightsalmon;
+}
+.invalid-input{
+    background-color: lightcoral;
+}
