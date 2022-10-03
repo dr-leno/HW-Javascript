@@ -68,7 +68,7 @@ function generateTodoListHtml({id, title, isDone}) {
         return todoTemplate
                     .replaceAll('{{id}}', id)
                     .replaceAll('{{title}}', title)
-                    .replaceAll('{{class}}', isDone ? 'todo-item done' : 'todo-item');
+                    .replaceAll('{{class}}', isDone ? `${TODO_ITEM_CLASS} ${DONE_ITEM_CLASS}` : `${TODO_ITEM_CLASS}`);
 }
 
 function getFormValues() {
