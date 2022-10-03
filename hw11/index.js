@@ -24,7 +24,6 @@ todoListEl.addEventListener('click', onListElClick);
 newTodoTitleInput.addEventListener('input', onInputChange);
 
 
-
 init();
 
 function init() {
@@ -49,7 +48,6 @@ function onFormSubmit(e) {
 
 function onInputChange(e) {
     validateInput(e.target);
-    console.log('i work')
 }
 
 function onListElClick(e){
@@ -57,7 +55,6 @@ function onListElClick(e){
 
     if(e.target.classList.contains(TODO_ITEM_CLASS)) {
         setTodoStatus(todoId);
-        toggleTodo(todoId);
     }
     if(e.target.classList.contains(DELETE_BTN_CLASS)) {
         deleteTodo(todoId);
@@ -111,7 +108,6 @@ function getTodoId(el) {
 }
 
 function setTodoStatus(id){
-    console.log('todoList', todoList);
     todoList = todoList.map((item) => {
         if(item.id === id){
             item.isDone = !item.isDone;  
