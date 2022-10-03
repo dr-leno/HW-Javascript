@@ -15,14 +15,15 @@
 
         </ul>
         <form action="#" id="newTodoForm">
-            <input type="text" id="idInput">
+            <input type="hidden" id="idInput">
             <input type="text" id="newTodoTitle" placeholder="Enter new task here">
-            <button type="submit" id="saveTodoBtn">Save</button>
+            <button type="submit" id="saveTodoBtn" disabled>Save</button>
         </form>
     </div>
     <script id="todoTemplate" type="text/template">
-        <li class="todo-item" data-todo-id="{{id}}">{{title}}<button type="button" class="edit-btn">Edit</button>
-        <button type="button" class="delete-btn">Delete</button></li>
+        <li class="{{class}}" data-todo-id="{{id}}">{{title}}
+            <div><button type="button" class="edit-btn">Edit</button>
+        <button type="button" class="delete-btn">Delete</button></div></li>
     </script>
 </body>
 </html>
