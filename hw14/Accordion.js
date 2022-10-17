@@ -3,7 +3,7 @@ class Accordion {
       ITEM: 'accordion-item',
       TITLE: 'accordion-title',
       BODY: 'accordion-body',
-      ACTIVE_CLASS: 'active',
+      ACTIVE: 'active',
     };
 
     #el = null;
@@ -24,6 +24,6 @@ class Accordion {
     }
 
       #toggleElement(el) {
-        el.classList.toggle(Accordion.CLASSES.ACTIVE_CLASS);
+        el.classList.toggle(Accordion.CLASSES.ACTIVE);
     }
 }
