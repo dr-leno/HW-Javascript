@@ -11,7 +11,7 @@ const TOPPING_SPICE = { price: 15, callories: 0 };
 const TOPPING_MAYO = { price: 20, callories: 5 };
 
 function Hamburger(size) {
-    this.burger = {...size,};
+    this.burger = {...size};
 }
 
 Hamburger.prototype.addTopping = function(topping) {

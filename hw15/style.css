@@ -1,0 +1,45 @@
+* {
+    list-style-type: none;
+}
+body {
+    background-color: darkslategrey;
+}
+.container {
+    margin: 0 auto;
+    width: 700px;
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form input {
+    width: 70%;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 6px;
+}
+button {
+    padding: 5px;
+}
+li {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    margin-bottom: 10px;
+
+}
+.todo-item.done {
+    background-color: lightgreen;
+}
+.todo-item {
+    background-color: lightyellow;
+}
+.invalid-input {
+    background-color: lightcoral;
+}

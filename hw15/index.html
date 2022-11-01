@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>TodoList v3 (data from server)</title>
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Primitive To-Do List with data from server</h1>
+        <ul id="todoList">
+
+        </ul>
+        <form action="#" id="newTodoForm">
+            <input type="hidden" id="idInput">
+            <input type="text" id="newTodoTitle" name="title" placeholder="Enter new task here">
+            <button type="submit" id="saveTodoBtn">Save</button>
+        </form>
+    </div>
+    <script id="todoTemplate" type="text/template">
+        <li class="todo-item {{doneClass}}" data-todo-id="{{id}}">{{title}}
+        <button type="button" class="delete-btn">Delete</button></li>
+    </script>
+</body>
+</html>
