@@ -20,9 +20,7 @@ let contactList = [];
 
 newContactForm.addEventListener('submit', onNewContactFormSubmit);
 contactsListEl.addEventListener('click', onContactsListClick);
-nameInput.addEventListener('input', onNewContactFormInput);
-surnameInput.addEventListener('input', onNewContactFormInput);
-emailInput.addEventListener('input', onNewContactFormInput);
+newContactForm.addEventListener('input', onNewContactFormInput);
 
 init();
 
