@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Contact List with REST</title>
+    <script src="./index.js" async></script>
+</head>
+<body>
+    <div class="container">
+         <h1>Contact list</h1>
+         <form id="contactForm">
+         <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>E-mail</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="contactsList"></tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        <input type="hidden" id="idInput">
+                        <input type="text" id="name" placeholder="Enter name"/>
+                    </td>
+                    <td>
+                        <input type="text" id="surname" placeholder="Enter surname"/>
+                    </td>
+                    <td>
+                        <input type="text" id="email" placeholder="Enter email"/>
+                    </td>
+                    <td><button id="addContactBtn">Add</button></td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+    </div>
+    <script id="contactTemplate" type="text/template">
+        <tr class="new-contact" data-contact-id="{{id}}">
+            <td>{{name}}</td>
+            <td>{{surname}}</td>
+            <td>{{email}}</td>
+            <td>
+                <button class="edit-btn" type="button">Edit</button>
+                <button class="delete-btn" type="button">Delete</button>
+            </td>
+        </tr>
+        
+    </script>
+</body>
+</html>
