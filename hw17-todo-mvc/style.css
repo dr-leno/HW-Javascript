@@ -1,0 +1,43 @@
+* {
+    list-style-type: none;
+}
+body {
+    background-color: darkslategrey;
+}
+.container {
+    margin: 0 auto;
+    width: 700px;
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form input {
+    width: 70%;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 6px;
+}
+button {
+    padding: 5px;
+}
+
+.todo-item.done {
+    background-color: lightgreen;
+}
+.todo-item {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: lightyellow;
+    border-radius: 6px;
+}
+.invalid-input {
+    background-color: lightcoral;
+}
