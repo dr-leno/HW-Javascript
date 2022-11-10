@@ -22,14 +22,14 @@ class TodoFormView {
         const todoForm = document.createElement('form');
         todoForm.className = 'form';
 
-        const todoInput = document.createElement('input');
-        todoInput.className = 'todo-input';    
+        const toDoInput = document.createElement('input');
+        toDoInput.className = 'todo-input';    
 
         const saveButton = document.createElement('button');
         saveButton.className = 'save-todo';
         saveButton.innerText = 'Save';
 
-        todoForm.append(todoInput);
+        todoForm.append(toDoInput);
         todoForm.append(saveButton);
 
         this.el = todoForm;
@@ -43,9 +43,7 @@ class TodoFormView {
                 return
             } else{
                 this.saveTodo(newTodo);
-            }
-
-            
+            }  
 
             this.resetInput();
         })
