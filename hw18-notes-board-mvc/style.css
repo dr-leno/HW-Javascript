@@ -1,0 +1,74 @@
+*, html, body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style-type: none;
+	text-decoration: none;
+}
+body {
+    background-color: #193f71;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#note-board-container {
+    margin: 20px auto 0;
+    width: 1200px;
+}
+form {
+    display: flex;
+    justify-content: space-between;
+}
+#note-input {
+    width: 80%;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+}
+#addBtn {
+    height: 40px;
+    background-color: #2d3436;
+    color: white;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    align-self: center;
+    cursor: pointer;
+}
+.note-board {
+    display: flex;
+    flex-wrap: wrap;
+}
+.note {
+    width: 350px;
+    height: 200px;
+    background-color: white;
+    margin: 15px;
+    margin-top: 55px;
+}
+
+.note-header {
+    width: 100%;
+    background-color: #2d3436;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: end;
+}
+
+.note-header i {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.note textarea {
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.note textarea:focus {
+    border: 0;
+    outline: 0;
+}
