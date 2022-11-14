@@ -1,4 +1,8 @@
 class NoteBoardView {
+      static CLASSES = {
+        NOTE_ITEM: 'note',
+        DELETE_BTN: 'delete-btn'
+    }
 
     static noteBoardTemplate = `
     <div class="note-board">
@@ -17,7 +21,7 @@ class NoteBoardView {
         }
 
     static getNoteId(el) {
-            return el.closest('.note').dataset.noteId;
+            return el.closest('.' + NoteBoardView.CLASSES.NOTE_ITEM).dataset.noteId;
         }
 
     #config = null;
@@ -45,7 +49,7 @@ class NoteBoardView {
         })
         this.el.addEventListener('click', (e) => {
             
-            if(e.target.classList.contains('delete-btn')){
+            if(e.target.classList.contains(NoteBoardView.CLASSES.DELETE_BTN)){
                 const noteId = NoteBoardView.getNoteId(e.target);
                 
                 this.delete(noteId);
@@ -65,5 +69,5 @@ class NoteBoardView {
 
     change(note){
         this.#config.onChange(note);
-    }    
+    } 
 }

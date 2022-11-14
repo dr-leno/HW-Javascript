@@ -1,4 +1,8 @@
 class NoteFormView {
+    static SELECTORS = {
+        TEXTAREA: 'textarea'
+    }
+
     static noteFormTemplate = `
     <form action="#">
             <textarea name="description" id="note-input" cols="30" rows="3" placeholder="Enter your note here..."></textarea>
@@ -33,7 +37,7 @@ class NoteFormView {
 
     getFormValue() {
        return {
-            description: this.el.querySelector('textarea').value
+            description: this.el.querySelector(NoteFormView.SELECTORS.TEXTAREA).value
         }
     }
 
