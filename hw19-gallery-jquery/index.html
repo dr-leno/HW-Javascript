@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./lightbox/lightbox.min.css">
+    <title>Gallery with jQuery</title>
+    <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"
+            defer
+    ></script>
+    <script src="./lightbox/lightbox.min.js" defer></script>
+    <script src="../common/js/RestApi.js" defer></script>
+    <script src="../common/js/utils.js" defer></script>
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div id="gallery">
+    </div>
+    
+    <script id="photoTemplate" type="text/template">
+        <a href="{{url}}" data-lightbox="gallery">
+            <img src="{{thumbnailUrl}}" width="150" height="150" alt="{{title}}" />
+        </a>
+        
+    </script>
+</body>
+</html>
