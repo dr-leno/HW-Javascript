@@ -1,0 +1,12 @@
+{
+  "name": "hw20",
+  "version": "1.0.0",
+  "description": "Homework calculator NodeJS",
+  "main": "app.js",
+  "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["homework", "calculator"],
+  "author": "Olena Dovban",
+  "license": "ISC"
+}
