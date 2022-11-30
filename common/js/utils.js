@@ -1,5 +1,5 @@
 function interpolate(template, obj) {
-    for (key in obj) {
+    for (let key in obj) {
         template = template.replaceAll(`{{${key}}}`, obj[key]);
     }
 
