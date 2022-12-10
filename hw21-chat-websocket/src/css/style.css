@@ -1,0 +1,58 @@
+body {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 20px;
+}
+
+.author {
+    font-weight: bold;
+    font-size: 24px;
+    margin-right: 20px;
+}
+.msg-text {
+    margin-right: 20px;
+}
+
+.msg-time{
+    font-style: italic;
+
+}
+
+.msg {
+    width: 70%;
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.msg:nth-child(2n+1){
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
+#message-form {
+    margin-top: 20px;
+    border: 2px solid #dedede;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+button {
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    padding: 5px;
+    font-size: 16px;
+}
