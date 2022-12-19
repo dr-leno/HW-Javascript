@@ -1,0 +1,6 @@
+.task-item.done {
+    text-decoration: line-through;
+}
+.task-item, li button {
+    cursor: pointer;
+}
