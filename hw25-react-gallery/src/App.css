@@ -1,0 +1,20 @@
+#root {
+    background-color: #2D3033;
+    padding: 20px;
+}
+.container {
+    display: flex;
+}
+.albums-list {
+    width: 40%;
+}
+.photos-list {
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+}
+.photos-item {
+    margin-left: 10px;
+    height: 150px;
+    display: block;
+}
