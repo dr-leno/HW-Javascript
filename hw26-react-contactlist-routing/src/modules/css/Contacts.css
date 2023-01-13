@@ -1,0 +1,29 @@
+h1 {
+    cursor: pointer;
+}
+.container{
+    margin: 0 auto;
+    width: 1200px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+   margin-bottom: 20px;
+}
+.cell{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-comp {
+    margin-bottom: 20px;
+}
+input {
+    padding: 10px;
+}
