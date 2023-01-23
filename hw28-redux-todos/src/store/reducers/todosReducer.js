@@ -1,4 +1,4 @@
-import { ACTION_DELETE, ACTION_TOGGLE } from '../actions/todos';
+import { ACTION_DELETE, ACTION_TOGGLE, ACTION_CREATE } from '../actions/todos';
 
 const INITIAL_STATE = {
     todos: [
@@ -13,6 +13,11 @@ export default function todosReducer(state = INITIAL_STATE, { type, payload }) {
     console.log('reducer fired', state, type, payload);
 
     switch (type) {
+        case ACTION_CREATE:
+            return {
+                ...state,
+                todos: [...state.todos, payload]
+            };
         case ACTION_TOGGLE:
             return {
                 ...state,
