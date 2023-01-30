@@ -9,8 +9,12 @@ import React from 'react';
 import Signup from './modules/common/auth/pages/Signup';
 import Users from './modules/admin/users/pages/Users';
 
+import { Container, CssBaseline } from '@mui/material';
+
 function App() {
     return (
+        <Container component="main" maxWidth="xs">
+            <CssBaseline />
         <Routes>
             <Route path="" element={<Landing />} />
 
@@ -32,7 +36,8 @@ function App() {
                 <Route path="dashboard" element={<Dashboard />} />
                 <Route path="users" element={<Users />} />
             </Route>
-        </Routes>
+            </Routes>
+            </Container>
     );
 }
 
